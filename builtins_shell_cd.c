@@ -12,7 +12,7 @@ void shell_cd(char **args)
 	/* If no argument is provided, change to HOME directory */
 	if (directories == NULL)
 	{
-		dir = _getenv("HOME");
+		directories = _getenv("HOME");
 		if (directories == NULL)
 		{
 			_puts("cd: No HOME directory found\n");

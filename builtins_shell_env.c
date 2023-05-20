@@ -1,17 +1,17 @@
 #include "shell.h"
 
 /**
- * shell_env - Prints all the environment variables.
+ * shell_env - prints env variables.
  *
- * Return: void.
+ * Return: void
  */
 int shell_env(void)
 {
-	int i;
+	int j;
 
-	for (i = 0; environ[i]; i++)
+	for (j = 0; environ[j]; j++)
 	{
-		_puts(environ[i]);
+		_puts(environ[j]);
 		_putchar('\n');
 	}
 
