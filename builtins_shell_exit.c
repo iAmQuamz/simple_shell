@@ -1,10 +1,9 @@
 #include "shell.h"
 
 /**
- * shell_exit - Exit the shell.
- * @args: Arguments.
+ * shell_exit - exit shell.
+ * @args: args
  *
- * Return: Nothing.
  */
 void shell_exit(char **args)
 {
