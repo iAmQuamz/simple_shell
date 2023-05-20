@@ -1,10 +1,10 @@
  #include "shell.h"
 
 /**
- * check_for_builtin - checks if the command is a builtin
- * @args: the arguments array
+ * check_for_builtin - checks cmd if builtin
+ * @args: array args
  *
- * Return: 1 if command is a builtin, 0 otherwise
+ * Return: 1 if true/ 0 if otherwise
  */
 int check_for_builtin(char **args)
 {
