@@ -7,7 +7,7 @@
 void shell_cd(char **args)
 {
 	char *directories = args[1];
-	int ret;
+	int rett;
 
 	/* If no argument is provided, change to HOME directory */
 	if (directories == NULL)
@@ -20,8 +20,8 @@ void shell_cd(char **args)
 		}
 	}
 
-	ret = chdir(directories);
-	if (ret == -1)
+	rett = chdir(directories);
+	if (rett == -1)
 	{
 		perror("cd");
 	}
