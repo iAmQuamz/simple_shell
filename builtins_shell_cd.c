@@ -1,26 +1,26 @@
 #include "shell.h"
 
 /**
- * shell_cd - changes the current working directory of the shell
- * @args: array of arguments
+ * shell_cd - change working dir of shell
+ * @args: args
  */
 void shell_cd(char **args)
 {
-	char *dir = args[1];
+	char *directories = args[1];
 	int ret;
 
 	/* If no argument is provided, change to HOME directory */
-	if (dir == NULL)
+	if (directories == NULL)
 	{
 		dir = _getenv("HOME");
-		if (dir == NULL)
+		if (directories == NULL)
 		{
 			_puts("cd: No HOME directory found\n");
 			return;
 		}
 	}
 
-	ret = chdir(dir);
+	ret = chdir(directories);
 	if (ret == -1)
 	{
 		perror("cd");
