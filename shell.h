@@ -50,9 +50,9 @@ void handle_sigstp(int sig);
 /* execute.c */
 int execute(char **args);
 
-/* parser.c */
+/* argsparser.c */
 char **tokenize(char *str, const char *delim);
-char **tokenize_input(char *input);
+char **tokenizer(char *input);
 
 /* get_env.c */
 char *_getenv(const char *name);

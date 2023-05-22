@@ -45,7 +45,7 @@ char **tokenize(char *str, const char *delim)
  *
  * Return: an array of pointers to the tokens, or NULL if an error occurs
  */
-char **tokenize_input(char *input)
+char **tokenizer(char *input)
 {
 	char **tokens = NULL;
 	char *tmp = NULL;

@@ -21,7 +21,7 @@ int main(void)
 		if (!input || !*input)/* EOF detected, exit the loop */
 			break;
 
-		args = tokenize_input(input);
+		args = tokenizer(input);
 		if (!args || !*args)
 		{
 			free(input);
